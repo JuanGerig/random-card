@@ -1,0 +1,38 @@
+body {
+
+    background-color: green;
+}
+.card {
+    display: grid;
+    margin: auto;
+    height: 400px;
+    width: 250px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+}
+::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 100px;
+    padding-left: 20px;
+}
+::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 100px;
+    padding-right: 20px;
+}
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+}
+.spade:before, .spade:after{ content: '\2660';}
+.club:before, .club:after{ content: '\2663';}
+.heart:before, .heart:after{ content: '\2665'; color: red;}
+.diamond:before, .diamond:after{ content: '\2666'; color: red;}
